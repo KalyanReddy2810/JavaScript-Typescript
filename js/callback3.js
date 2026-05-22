@@ -20,6 +20,8 @@ greets(sayHi);
 
 
 
+
+
 //callback with parameters
 function test1(var1, t){
     console.log("test1 function executed with var1: " + var1);
@@ -31,6 +33,7 @@ function test2(var1){
 }
 
 test1("Hello", test2);
+
 
 
 
@@ -60,6 +63,7 @@ const myArray = [1, 2, 3, 4, 5];
 processArray(myArray, displayArray);
 
 
+
 //callback with asynchronous operations
 function asyncOperation(callback){
     setTimeout(function(){  
@@ -79,7 +83,7 @@ function cheif(item, waiter){
     setTimeout(()=>{
         const menu = ["idly", "dosa", "vada","pongal","upma", "poha", "uggani", "puri"];
         if(menu.includes(item)){
-            waiter(items + " is available , will take 15 minutes to prepare");
+            waiter(item + " is available , will take 15 minutes to prepare");
         }else{
             waiter(`Sorry Sir, ${item} is not available`);
         }
