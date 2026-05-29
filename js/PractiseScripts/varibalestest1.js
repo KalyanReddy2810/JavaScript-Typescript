@@ -65,6 +65,7 @@ console.log(l); // 70
 try {
     console.log(m); // ReferenceError: Cannot access 'm' before initialization, because m is in the temporal dead zone  
     let m = 80;
+    
 } catch (e) {
     console.log("TDZ Error:", e.message);
 }
