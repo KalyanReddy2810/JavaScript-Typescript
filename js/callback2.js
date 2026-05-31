@@ -34,6 +34,8 @@ function test2(callback){
 test2(test1);
 
 
+
+console.log("---------------");
 //example of callback with variable
 function test3(callback){
     var name = "kalyan";

@@ -1,4 +1,4 @@
-function fetchBugsCallback(path:string, callback:(err: Error | null, data: string |null) => void) {
+function fetchBugsCb(path:string, callback:(err: Error | null, data: string |null) => void) {
 
     setTimeout(() => {
         if (path !== 'jirapath'){
@@ -10,14 +10,14 @@ function fetchBugsCallback(path:string, callback:(err: Error | null, data: strin
 }
 
 
-fetchBugsCallback('jirapath1', (err, data) => {
+fetchBugsCb('jirapath1', (err, data) => {
     if (err) {
         console.error('Error:', err.message);
     } else {
         console.log('Data:', data);
     }
 }); 
-fetchBugsCallback('jirapath', (err, data) => {
+fetchBugsCb('jirapath', (err, data) => {
     if (err) {
         console.error('Error:', err.message);  
     } else {
