@@ -41,14 +41,16 @@ function createCart() {
     }
   };
 
-  //console.log(items); // This will cause an error because 'items' is not accessible here
 }
+
+//console.log(items); // This will cause an error because 'items' is not accessible here
 
 const cart = createCart();
 
 cart.addItem();    // 1
 cart.addItem();    // 2
 cart.removeItem(); // 1
+
 
 
 

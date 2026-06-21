@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "test:playwright": "npx playwright test"
+  },
   "devDependencies": {
+    "@playwright/test": "^1.60.0",
     "typescript": "^6.0.3"
   }
 }

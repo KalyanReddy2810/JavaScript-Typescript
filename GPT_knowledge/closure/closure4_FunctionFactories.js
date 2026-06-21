@@ -8,8 +8,11 @@ function makeMultiplier(multiplier) {
 const double = makeMultiplier(2);       
 const triple = makeMultiplier(3);
 
-console.log("double(5):", double(5)); // 10 - double is a closure that captures the 'multiplier' variable from its makeMultiplier call, allowing it to create a specialized function for multiplying by 2.
-console.log("triple(5):", triple(5)); // 15 - double and triple are closures that capture the 'multiplier' variable from their respective makeMultiplier calls, allowing them to create specialized functions for multiplying by 2 and 3.
+console.log("double(5):", double(5)); 
+// 10 - double is a closure that captures the 'multiplier' variable from its makeMultiplier call, allowing it to create a specialized function for multiplying by 2.
+console.log("triple(5):", triple(5)); 
+// 15 - double and triple are closures that capture the 'multiplier' variable from their respective makeMultiplier calls, 
+// allowing them to create specialized functions for multiplying by 2 and 3.
 
 
 //Example2 
@@ -30,7 +33,7 @@ console.log(add100(3));  // 103 (100+3)
 //Examples3:
 // More complex factory — builds tax calculators per country
 function makeTaxCalc(rate) {
-  return (price) => +(price * (1 + rate)).toFixed(2);
+  return (price) => (price * (1 + rate)).toFixed(2);
 }
 const indiaTax  = makeTaxCalc(0.18);
 const usTax     = makeTaxCalc(0.08);
